@@ -1,0 +1,100 @@
+-
+  var productTabsInfo = [
+    [
+      {
+        img: "slide-2",
+        alt: "some description",
+        descr: "Small description of the image"
+      },
+      {
+        img: "slide-3",
+        alt: "some description",
+        descr: "Small description of the image"
+      },
+      {
+        img: "slide-2",
+        alt: "some description",
+        descr: "Small description of the image"
+      },
+      {
+        img: "slide-3",
+        alt: "some description",
+        descr: "Small description of the image"
+      }
+    ],
+    [
+      {
+        img: "slide-4",
+        alt: "some description",
+        descr: "Small description of the image"
+      },
+      {
+        img: "slide-4",
+        alt: "some description",
+        descr: "Small description of the image"
+      },
+      {
+        img: "slide-4",
+        alt: "some description",
+        descr: "Small description of the image"
+      },
+      {
+        img: "slide-4",
+        alt: "some description",
+        descr: "Small description of the image"
+      }
+    ],
+    [
+      {
+        img: "slide-3",
+        alt: "some description",
+        descr: "Small description of the image"
+      },
+      {
+        img: "slide-3",
+        alt: "some description",
+        descr: "Small description of the image"
+      },
+      {
+        img: "slide-3",
+        alt: "some description",
+        descr: "Small description of the image"
+      },
+      {
+        img: "slide-3",
+        alt: "some description",
+        descr: "Small description of the image"
+      }
+    ]
+  ]
+
+section.product-tabs
+  .container
+    .product-tabs__header
+      .tab-h.tab-h--active(data-tab="0") Tab1
+      .tab-h(data-tab="1") Tab2
+      .tab-h(data-tab="2") Tab3
+    .product-tabs__body
+      each info in productTabsInfo
+        .tab-b
+          .product-container
+            ul.product-wrapper.swiper-wrapper
+              each item in info
+                li.product-slide.swiper-slide
+                  +img("slides", item.img, "jpg", "685", "500", item.alt)
+                  p=item.descr
+            .product-tabs__nav
+              button.product-tabs__btn.product-tabs__btn--prev
+                <svg width="63" height="62" viewBox="0 0 63 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="0.4" cx="31.5" cy="31" r="31" fill="black"/>
+                <path d="M35.5 18L23.168 30.8064C22.795 31.1936 22.795 31.8064 23.168 32.1936L35.5 45" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+
+              button.product-tabs__btn.product-tabs__btn--next
+                <svg width="63" height="62" viewBox="0 0 63 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="0.4" cx="31.5" cy="31" r="31" transform="rotate(-180 31.5 31)" fill="black"/>
+                <path d="M27.5 44L39.832 31.1936C40.205 30.8064 40.205 30.1936 39.832 29.8064L27.5 17" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+
+
+

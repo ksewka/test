@@ -1,0 +1,44 @@
+.timer {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+
+  @include vp--767 {
+    width: 310px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    border-radius: 5px;
+    padding: 20px 10px;
+    box-shadow: 0 0 5px 2px $mischka-color;
+
+    @include vp--767 {
+      width: 20%;
+      font-size: 13px;
+    }
+
+    span {
+      font-family: $font-family--roboto;
+      font-size: 40px;
+      font-weight: 700;
+    }
+  }
+}
+
+.promotion-timer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

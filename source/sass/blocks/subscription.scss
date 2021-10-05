@@ -1,0 +1,155 @@
+.subscription {
+  width: 100%;
+  background-color: $color-default-black;
+  position: relative;
+  padding-bottom: 20px;
+  margin-top: -1px;
+}
+
+.subscription__wrapper {
+  max-width: 780px;
+  margin: 0 auto;
+  margin-top: 90px;
+  margin-bottom: 44px;
+
+
+  @include vp--767 {
+    max-width: 360px;
+    margin-top: 67px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.subscription::before {
+  content: "";
+  height: 1px;
+  width: 97%;
+  background-color: #787B80;
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+
+  @include vp--1023 {
+    width: 100%;
+  }
+
+  @include vp--767 {
+    display: none;
+  }
+
+}
+
+
+.subscription h2 {
+  color: $color-default-white;
+//  text-align: center;
+  font-size: 25px;
+  line-height: 35px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  max-width: 645px;
+  margin-bottom: 45px;
+//  padding-left: 20px;
+
+  @include vp--1023 {
+    max-width: 650px;
+  }
+
+  @include vp--767 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+.subscription__form {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  text-transform: uppercase;
+  grid-column-gap: 17px;
+  max-width: 780px;
+  margin: 0 auto;
+  justify-content: center;
+
+  @include vp--1023 {
+    grid-template-columns: 34.5% 34.5% 25%;
+
+    max-width: 528px;
+    margin: 0 auto;
+  }
+
+  @include vp--767 {
+
+    grid-template-columns: 100%;
+    grid-template-rows: 34.5% 34.5% 25%;
+    grid-row-gap: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
+
+.subscription__form label {
+  color: $color-default-white;
+  flex: 0 0 30%;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Roboto;
+  padding-bottom: 10px;
+
+
+  @include vp--1023 {
+    flex: 0 0 34.5%;
+    padding-bottom: 0;
+  }
+}
+
+.subscription__form input {
+  height: 46px;
+  width: 100%;
+  margin-top: 3px;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+}
+
+.subscription__form button {
+  height: 46px;
+  align-self: center;
+  flex: 0 1 30%;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: #3FA0DC;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: $trans--300;
+  margin-top: 16px;
+
+  @include vp--1023 {
+    flex: 0 0 25%;
+    margin-top: 27px;
+  }
+
+  @include vp--767 {
+    flex: 0 0 100%;
+    align-self: stretch;
+    min-height: 44px;
+    margin-top: 2px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-black;
+    border: 1px solid $color-white;
+  }
+}
+
+.subscription--hide {
+  display: none;
+}

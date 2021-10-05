@@ -1,0 +1,79 @@
+-
+  var colorsImg = [
+    {
+      color: "item-1",
+      price: "200000"
+    },
+    {
+      color: "item-1",
+      price: "210000"
+    },
+    {
+      color: "item-1",
+      price: "220000"
+    },
+    {
+      color: "item-1",
+      price: "230000"
+    }
+  ];
+
+  var engineVolume = [
+    {
+      vol: "25",
+      descr: "Description",
+      price: "25000"
+    },
+    {
+      vol: "30",
+      descr: "Description",
+      price: "30000"
+    },
+    {
+      vol: "50",
+      descr: "Description",
+      price: "50000"
+    }
+  ]
+
+
+  var modification = [
+    {
+      variant: "1",
+      descr: "Description",
+      price: "60000"
+    },
+    {
+      variant: "2",
+      descr: "Description",
+      price: "70000"
+    }
+  ]
+
+section.calc
+  .container
+    .colors(id="calc")
+      h2.h2 Calculate the cost
+      ul.colors__list
+        each color in colorsImg
+          li.colors__item.calc__item(data-price=color.price)
+            +img("content", color.color, "jpg","252", "192" , alt="some description")
+    .engine
+      h2.h2 Subtitle2
+      ul.engine__list
+        each engine in engineVolume
+          li.engine__item.calc__item(data-price=engine.price)
+            p(class="calc__subtitle")=`Engine ${engine.vol}`
+            p(class="calc__text")=engine.descr
+    .mod
+      h2.h2 Subtitle3
+      ul.mod__list
+        each mod in modification
+          li.mod__item.calc__item(data-price=mod.price)
+            p(class="calc__subtitle")=`Variant ${mod.variant}`
+            p(class="calc__text")=mod.descr
+    .price.calc__subtitle
+      p.price__text Price:
+      span.price__sum 247 000p
+    a.button.button--large(href="#") To the Store
+

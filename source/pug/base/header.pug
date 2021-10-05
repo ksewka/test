@@ -1,0 +1,87 @@
+mixin header(headerMods, currentPage)
+  -
+    var headerLinks = [
+      {
+        href: "#",
+        text: "Item1"
+      },
+      {
+        href: "#",
+        text: "Item2"
+      },
+      {
+        href: "#",
+        text: "Item3"
+      },
+      {
+        href: '#',
+        text: "Item4"
+      }
+    ]
+
+    var product = [
+      {
+        img: "product-1",
+        model: "metropolis",
+        colors: ["petite-orchid-color", "madang-color", "moon-raker-color", "papaya-whip-color"],
+        price: "670 000",
+        href: "#"
+      },
+
+      {
+        img: "product-2",
+        model: "pulsion",
+        colors: ["petite-orchid-color", "madang-color", "moon-raker-color", "papaya-whip-color"],
+        price: "630 000",
+        href: "#"
+      },
+
+      {
+        img: "product-3",
+        model: "kisbee",
+        colors: ["scarlet-color", "summer-sky-color", "las-palmas-color", "color-black"],
+        price: "650 000",
+        href: "#"
+      },
+
+      {
+        img: "product-4",
+        model: "django",
+        colors: ["petite-orchid-color", "madang-color", "moon-raker-color", "papaya-whip-color"],
+        price: "610 000",
+        href: "#"
+      }
+    ]
+
+  header.header(class=headerMods)
+    .header__wrapper
+      if(currentPage === "main")
+        a.header__logo
+          img(src="img/svg/logo.svg", width="157", height="132", alt="Логотип")
+      else
+        a.header__logo(href="main.html", aria-label="Переход на главную")
+          img(src="img/svg/logo.svg", width="157", height="132", alt="Логотип")
+      .main-nav-wrap
+        nav.main-nav
+          ul.main-nav__list
+            each link in headerLinks
+              li.main-nav__item
+                if(link.href === currentPage + '.html')
+                  a.main-nav__link.main-nav__link--active=link.text
+                else
+                  a.main-nav__link(href=link.href)=link.text
+        .header__social
+          a.header__phone(href="tel:+777777777") +7 777 777-77-77
+          .header__social-block
+            p Woodies
+            ul.header__social-list
+              li.header__social-item
+                a.header__social-link.header__social-link--facebook(href="#")
+                  +icon("facebook", "20", "20")
+              li.header__social-item
+                 a.header__social-link.header__social-link--instagram(href="#")
+                  +icon("instagram", "20", "20")
+              li.header__social-item
+                a.header__social-link.header__social-link--youtube(href="#")
+                  +icon("youtube", "20", "20")
+      button.burger(type="button", aria-label="Открыть меню")

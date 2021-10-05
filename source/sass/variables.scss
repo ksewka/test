@@ -1,0 +1,65 @@
+// Colors
+//---------------------------------
+// https://www.htmlcsscolor.com/hex/334482
+
+// Default
+
+$color-default-black:             #000000;
+$color-default-white:             #ffffff;
+$color-transparent:               rgba(255, 255, 255, 0);
+
+// Base
+$color-black:                     $color-default-black;
+$color-white:                     $color-default-white;
+$sea-buckthorn-color:             #f39449;
+$summer-sky-color:                #3fa0dc;
+$white-smoke-color:               #f0f0f0;
+$petite-orchid-color:             #d99191;
+$madang-color:                    #c4e1ad;
+$moon-raker-color:                #c9b7df;
+$papaya-whip-color:               #fff1d6;
+$scarlet-color:                   #eb2f13;
+$las-palmas-color:                #c5dc39;
+$storm-grey-color:                #787b80;
+$lavender-color:                  #ececee;
+$white-smoke:                     #f7f7f7;
+$maya-blue:                       #6bc7f5;
+$snow-color:                      #fbfbfb;
+$soft-peach-color:                #e6dede;
+$whisper-color:                   #e5e5e5;
+$white-smoke-color:               #f7f7f7;
+$mischka-color:                   #adaeb2;
+
+// Gradient
+
+$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+
+// Typography
+//---------------------------------
+
+$font-family--peugeot:              "Peugeot-Cyrillic", "Arial", sans-serif;
+$font-family--roboto:               "Roboto", "Arial", sans-serif;
+
+
+// Animation
+//---------------------------------
+
+$trans--300:                        0.3s ease;
+$trans--600:                        0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+// Viewports
+//---------------------------------
+
+$vp--320:                           320px;
+$vp--375:                           375px;
+$vp--768:                           768px;
+$vp--1024:                          1024px;
+$vp--1280:                          1280px;
+$vp--1440:                          1440px;
+$vp--1920:                          1920px;
+
+// Retina
+//---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;

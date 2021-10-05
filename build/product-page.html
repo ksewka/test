@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Woodies - интернет-магазин часов</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Woodies — интернет-магазин часов">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5Z016yAxHWGiKfL_0xiSfjbOR3OEk2n0"></script>
+  </head>
+  <body>
+    <div class="visually-hidden"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="arrow-left" viewBox="0 0 63 62">
+<circle opacity="0.4" cx="31.5" cy="31" r="31" fill="black"/>
+<path d="M35.5 18L23.168 30.8064C22.795 31.1936 22.795 31.8064 23.168 32.1936L35.5 45" stroke="white" stroke-width="3" stroke-linecap="round"/>
+</symbol><symbol id="facebook" viewBox="0 0 24 24">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<path class="st0" d="M12,0C5.4,0,0,5.4,0,12s5.4,12,12,12s12-5.4,12-12S18.6,0,12,0z M15,8h-1.4C13.1,8,13,8.2,13,8.8V10h2l-0.2,2
+	H13v7h-3v-7H8v-2h2V7.7C10,5.9,10.9,5,13,5h2V8z"/>
+</symbol><symbol id="icon-close" viewBox="0 0 20 20"><path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z"/></symbol><symbol id="instagram" viewBox="0 0 24 24">
+<style type="text/css">
+  .st0{fill:#FFFFFF;}
+</style>
+<path class="st0" d="M14.8,6.3c-0.7,0-1,0-2.8,0s-2.1,0-2.8,0c-1.9,0.1-2.8,1-2.9,2.9c0,0.7,0,1,0,2.8s0,2.1,0,2.8
+  c0.1,1.9,1,2.8,2.9,2.9c0.7,0,1,0,2.8,0c1.9,0,2.1,0,2.8,0c1.9-0.1,2.8-1,2.9-2.9c0-0.7,0-1,0-2.8s0-2.1,0-2.8
+  C17.6,7.3,16.7,6.4,14.8,6.3z M12,15.6c-2,0-3.6-1.6-3.6-3.6S10,8.4,12,8.4s3.6,1.6,3.6,3.6S14,15.6,12,15.6z M15.7,9.1
+  c-0.5,0-0.8-0.4-0.8-0.8s0.4-0.8,0.8-0.8c0.5,0,0.8,0.4,0.8,0.8C16.6,8.7,16.2,9.1,15.7,9.1z M14.3,12c0,1.3-1,2.3-2.3,2.3
+  s-2.3-1-2.3-2.3s1-2.3,2.3-2.3S14.3,10.7,14.3,12z M12,0C5.4,0,0,5.4,0,12s5.4,12,12,12s12-5.4,12-12S18.6,0,12,0z M19,14.9
+  c-0.1,2.5-1.5,4-4.1,4.1c-0.7,0-1,0-2.9,0s-2.1,0-2.9,0c-2.5-0.1-4-1.5-4.1-4.1c0-0.7,0-1,0-2.9s0-2.1,0-2.9c0.1-2.5,1.5-4,4.1-4.1
+  c0.7,0,1,0,2.9,0s2.1,0,2.9,0c2.5,0.1,4,1.5,4.1,4.1c0,0.7,0,1,0,2.9S19,14.1,19,14.9z"/>
+</symbol><symbol id="peugeot-logo" viewBox="0 0 139.8 94.3"><g><g><g><path fill="#C1C1C1" d="M16.9,86v8.3h-1.5v-6.7l-4.6,5H9.1l-4.5-4.9v6.6H3.2V86h1.8l5.1,5.7l5.2-5.7H16.9z"/><path fill="#C1C1C1" d="M20.2,92v-3.7c0-1.7,0.7-2.3,2.3-2.3h7c1.7,0,2.3,0.6,2.3,2.3V92c0,1.9-1,2.3-2.3,2.3h-7C21.2,94.3,20.2,93.9,20.2,92z M29.6,93c0.4,0,0.7-0.3,0.7-0.7v-4.2c0-0.4-0.2-0.7-0.7-0.7h-7.1c-0.6,0-0.8,0.4-0.8,0.7v4.2c0,0.5,0.3,0.7,0.8,0.7H29.6z"/><path fill="#C1C1C1" d="M45,87.3h-4.8v7h-1.5v-7h-4.9V86H45V87.3z"/><path fill="#C1C1C1" d="M47,92v-3.7c0-1.7,0.7-2.3,2.3-2.3h7c1.7,0,2.3,0.6,2.3,2.3V92c0,1.9-1,2.3-2.3,2.3h-7C47.9,94.3,47,93.9,47,92z M56.3,93c0.4,0,0.7-0.3,0.7-0.7v-4.2c0-0.4-0.2-0.7-0.7-0.7h-7.1c-0.6,0-0.8,0.4-0.8,0.7v4.2c0,0.5,0.3,0.7,0.8,0.7H56.3z"/><path fill="#C1C1C1" d="M61.5,88.3c0-1.9,1.1-2.3,3.1-2.3H72v1.4h-8.3c-0.4,0-0.8,0.3-0.8,0.7v4.2c0,0.4,0.3,0.7,0.8,0.7h8.4v1.4h-7.6c-1.9,0-3.1-0.4-3.1-2.3V88.3z"/><path fill="#C1C1C1" d="M84.8,86l-4.9,5.4v2.9h-1.5v-2.9L73.6,86h1.8l3.9,4.3L83,86H84.8z"/><path fill="#C1C1C1" d="M86.8,88.3c0-1.9,1.1-2.3,3.1-2.3h7.5v1.4h-8.3c-0.4,0-0.8,0.3-0.8,0.7v4.2c0,0.4,0.3,0.7,0.8,0.7h8.4v1.4h-7.6c-1.9,0-3.1-0.4-3.1-2.3V88.3z"/><path fill="#C1C1C1" d="M101.7,86v7h7.8v1.4h-9.2V86H101.7z"/><path fill="#C1C1C1" d="M122.9,93v1.4h-10.7V86h10.6v1.4h-9.1v2h8.2v1.4h-8.2V93H122.9z"/><path fill="#C1C1C1" d="M125.2,93h9.4c0.5,0,0.8-0.2,0.8-0.7v-0.7c0-0.5-0.2-0.7-0.8-0.7h-7.6c-1.4,0-1.9-0.6-1.9-2v-0.8c0-1.5,0.6-2.1,2.1-2.1h8.9v1.4h-8.9c-0.5,0-0.8,0.2-0.8,0.7v0.7c0,0.5,0.2,0.7,0.8,0.7h6.9c1.9,0,2.6,0.6,2.6,2.1v0.7c0,1.4-0.6,2-2.2,2h-9.2V93z"/></g></g><g><path fill="#FFFFFF" d="M66.5,80c-2.9,0-4.3-0.5-4.3-3.3v-5.2c0-2.6,1.3-3.4,3.9-3.4h11.3V70H65.3c-0.5,0-1.1,0.5-1.1,1v6c0,0.5,0.5,1.1,1.1,1.1h10.8v-3.2h-6.3V73h8.3V80H66.5z"/><path fill="#FFFFFF" d="M12.1,68.1H0V80h2.1v-3.7h10c2.4,0,3.8-0.9,3.8-3.4v-1.3C15.9,69.2,14.5,68.1,12.1,68.1z M13.8,73.5c0,0.5-0.5,1-1.1,1H2.1V70h10.6c0.5,0,1.1,0.5,1.1,1V73.5z"/><polygon fill="#FFFFFF" points="35.7,70 35.7,68.1 20.6,68.1 20.6,80 35.7,80 35.7,78.1 22.6,78.1 22.6,74.9 34.3,74.9 34.3,73 22.6,73 22.6,70 "/><polygon fill="#FFFFFF" points="98.4,70 98.4,68.1 83.3,68.1 83.3,80 98.4,80 98.4,78.1 85.3,78.1 85.3,74.9 97,74.9 97,73 85.3,73 85.3,70 "/><path fill="#FFFFFF" d="M45.2,80c-2.7,0-4.3-0.6-4.3-3.3v-8.6h2.1v9c0,0.5,0.5,1,1.1,1h9.9c0.6,0,1-0.5,1-1v-9H57v8.6c0,2.7-1.4,3.3-4.3,3.3H45.2z"/><path fill="#FFFFFF" d="M106.7,70c-0.6,0-1.1,0.5-1.1,1.1V77c0,0.5,0.5,1.1,1.1,1.1h10.2c0.5,0,1.1-0.5,1.1-1.1v-5.9c0-0.6-0.5-1.1-1.1-1.1H106.7z M107.9,80c-2.9,0-4.3-0.5-4.3-3.3v-5.3c0-2.7,1.3-3.3,4.3-3.3h7.9c2.6,0,4.3,0.6,4.3,3.3v5.3c0,2.7-1.5,3.3-4.3,3.3H107.9z"/><polygon fill="#FFFFFF" points="139.8,68.1 123.9,68.1 123.9,70 130.8,70 130.8,80 132.9,80 132.9,70 139.8,70 "/></g><g><g><g><path fill="#FFFFFF" d="M57.8,35.2c-0.2,0-0.3-0.1-0.3-0.2c-0.1-0.3-0.2-1.4-0.3-1.7c0-0.2,0-0.3,0.2-0.3c0.7-0.2,2-0.7,3-1c0.3-0.1,0.3-0.2,0.5-0.4c0.4-0.7,1.5-2.5,2-3.5c0.1-0.1,0.1-0.3,0-0.4l-0.2-0.4c-0.1-0.1-0.3-0.3-0.4-0.3c-1-0.3-2.4-0.6-3-0.8c-0.1,0-0.3,0-0.4,0l-0.1,0c1,0.3,1.8,0.6,2.9,1c0.1,0,0.2,0.1,0.2,0.2l0.1,0.3c0,0.1,0,0.3,0,0.4c-0.5,0.9-1.2,2.1-1.9,2.8c-0.1,0.1-0.2,0.2-0.4,0.3c-0.6,0.2-1.7,0.6-2.2,0.7c-0.1,0-0.1,0-0.2,0c-0.3-0.2-1.1-0.9-1.1-0.9s-0.1,0.7-0.1,1.1c0,0,0,0.1,0,0.1c0.1,0.3,0.3,0.8,0.4,1.1c0,0.1,0,0.1,0.1,0.2c0.1,0.5,0.5,1.9,0.5,1.9c0,0.2,0.2,0.3,0.4,0.2c0.2-0.1,1-0.3,1.3-0.4c0,0,0.1,0,0.1-0.1c0.2-0.2,0.6-0.5,0.6-0.5S58.3,35.1,57.8,35.2z"/><path fill="#FFFFFF" d="M59.6,30.8c0.4-0.5,0.9-1.3,1.4-2l-3.3,2.7c0.5-0.2,1.3-0.4,1.7-0.6C59.5,30.9,59.5,30.9,59.6,30.8z"/><path fill="#FFFFFF" d="M59.7,20l-0.6,0c0,0-0.1,0-0.1,0.1l-0.1,0.7c0,0,0,0.1,0.1,0.1l0.6-0.1c0.1,0,0.2-0.1,0.2-0.1c0.1-0.2,0.1-0.4,0-0.5C59.8,20,59.7,20,59.7,20z"/><path fill="#FFFFFF" d="M54,28.7l0.9,1l0.3-1.8C54.6,28,54.1,28.3,54,28.7z"/><path fill="#FFFFFF" d="M82.9,28.5c-0.4-0.6-2.2-3.1-4.4-5.4c-0.1-0.1-0.2-0.2-0.3-0.2l-0.4-0.2c0,0,0.7,2.9,0.9,4.4c0,0.2,0.1,0.4,0.3,0.5c1,1,1.7,1.8,2.2,2.6c0.2,0.4,0.4,0.8,0.4,1.2c0.2,2.3,0.1,5.4-0.2,7.2c-0.1,0.4-0.1,0.5-0.4,0.7c-2.2,1.8-5.8,4.9-7.3,6.4c-0.2,0.2-0.2,0.2-0.3,0.4c-0.2,0.3-0.4,0.8-0.4,0.8s-0.4-1.1-0.4-1.7c0-0.3,0-0.4,0-0.7c0.2-1.3,1.1-4.4,1.3-4.8c0,0,0-0.1,0-0.1l0-0.3c-0.3,0.7-2,4.5-2.4,5.9c-0.1,0.3-0.1,0.4,0,0.6c0.2,0.6,0.9,2.2,1.2,2.9c0,0,0.7-1.3,1.1-2c0.1-0.2,0.3-0.4,0.4-0.5c1.2-1.1,5.6-4.8,7.6-6.3c0.3-0.2,0.4-0.4,0.4-0.6c0.8-3.2,1.2-6.8,0.8-10.2C83,28.7,83,28.6,82.9,28.5z"/><path fill="#FFFFFF" d="M73.9,19.2c0.1-0.1,0.1-0.3,0.1-0.5c-0.1-0.4-0.2-0.9-0.3-1.2c0-0.1-0.1-0.1-0.1-0.2L73,17.1c-0.1,0-0.2-0.1-0.3,0c-1.5,0.3-3.1,0.6-4.2,0.8c-0.1,0-0.2,0.1-0.2,0.2l-0.4,0.6c0,0,0,0.1,0.1,0.1c0.3,0.1,0.9,0.2,1.2,0.2c0.1,0,0.2,0,0.3,0c0.8-0.3,2-0.8,2.9-1.1c0.1,0,0.2,0,0.2,0L73,18c0.1,0,0.1,0.1,0.1,0.1c0.1,0.2,0.2,0.4,0.3,0.6c0.1,0.1,0,0.2-0.1,0.4c-0.3,0.4-0.8,1.2-1.2,1.6c-0.1,0.1-0.1,0.2-0.1,0.3c0.2,0.7,0.7,2.3,0.9,3c0,0.1,0.1,0.2,0.1,0.2l0.3,0.3c0,0-0.6-2.6-0.7-3.3c0-0.1,0-0.2,0.1-0.3C73.2,20.5,73.7,19.7,73.9,19.2z"/><path fill="#FFFFFF" d="M87.2,21.3c0-0.2-0.1-0.3-0.3-0.4c-1.7-1.2-4.7-3-6.4-3.8c-0.2-0.1-0.5-0.1-0.7,0c-0.9,0.3-2.2,0.9-3.6,1.5c0,0,0.6,0,0.9,0.1c0.2,0,0.2,0,0.4,0c0.4-0.1,1.2-0.3,1.8-0.4c0.3-0.1,0.6,0,0.8,0.2c0.8,0.6,2.2,1.7,3,2.4c0.1,0.1,0.3,0.2,0.5,0.3c1.3,0.5,1.9,0.8,2.2,0.9c0.2,0.1,0.4,0.3,0.4,0.5c0.3,1.3,0.6,3.3,0.7,4.8c0,0.3,0,0.5-0.1,0.8c-0.4,1-1.3,2.8-1.8,3.6c0,0.1-0.1,0.1-0.2,0.2c-0.2,0.2-0.5,0.4-0.7,0.6c0,0-0.1,0.1-0.1,0.1c0,0.6-0.1,1.6-0.1,1.6c1.3-1.6,2.4-3.6,3.5-5.8c0.1-0.2,0.1-0.3,0.1-0.4C87.8,25.9,87.6,23.1,87.2,21.3z"/><path fill="#FFFFFF" d="M70.6,49.4c-0.3-0.7-1.8-4.3-2.2-5.7c-0.1-0.5-0.2-0.6-0.1-1.2c0.3-3.4,1.6-8.8,1.8-9.6c0-0.2,0-0.2,0-0.4c0-0.3-0.2-1.3-0.2-1.3c-0.6,1.3-2.5,6.6-3.3,9.7c-0.1,0.6-0.1,0.7,0,1.1c1,2.7,3.7,7.6,4.2,8.4l-0.1-0.9C70.7,49.5,70.7,49.4,70.6,49.4z"/><path fill="#FFFFFF" d="M68.3,49.6c0,0-0.6-0.4-0.8-0.5c-0.2-0.1-0.2-0.2-0.3-0.3c-1.2-1.1-5.5-6.3-6.7-8.6c-0.2-0.4-0.3-0.6-0.3-0.9c0-0.4,0.1-1.3,0.2-1.8c0.1-0.3,0.1-0.5,0.4-0.8c0.7-0.7,1.9-1.8,2.5-2.5c0.3-0.3,0.4-0.4,0.5-0.7c0.6-1,2.3-4.8,2.8-6.3c0.1-0.3,0.1-0.3,0.1-0.6c-0.1-0.8-0.7-2.9-0.7-2.9l-0.1,0.7c0,0,0,0.1,0,0.1c0.1,0.3,0.2,1.5,0.2,2.1c0,0.2,0,0.3-0.1,0.5c-0.9,1.7-4.2,6.2-6.3,8.6c-0.2,0.3-0.3,0.5-0.4,0.8c-0.1,0.5-0.2,1.7-0.3,2.6c0,0.5,0,0.7,0.3,1.2c1.3,2.1,5.6,7.2,7,8.4c0.1,0.1,0.2,0.1,0.3,0.2c0.5,0.3,1.9,0.9,1.9,0.9L68.3,49.6C68.3,49.6,68.3,49.6,68.3,49.6z"/><path fill="#FFFFFF" d="M61.9,19.3l2.7-0.8c0.2,0,0.3-0.2,0.4-0.3l1.4-2.5c0-0.1,0-0.1-0.1-0.1l-1.2,0c-0.1,0-0.2,0-0.3,0.1c-1.1,0.4-2.6,1-3.5,1.5c-0.1,0.1-0.2,0.1-0.3,0.2l-1.3,1.6c0,0.1-0.1,0.1-0.2,0.1l-0.8,0.4c0,0-0.1,0-0.1,0.1l0,0.1c0,0,1.8-0.1,2.4-0.1C61.4,19.4,61.6,19.4,61.9,19.3z"/><path fill="#FFFFFF" d="M66.9,13.4c3.4-0.3,7.3-0.2,8.3-0.2c0.1,0,0.3,0,0.4,0.1l0.7,0.2c-1.7,0.1-5.8,0.5-7.5,0.7l0.6,0.1c0,0,0.1,0,0.1,0c1.2-0.1,3.7-0.2,4.7-0.2c0.3,0,0.4,0,0.7,0.1c0.6,0.2,1.9,0.8,2.4,1.1c0.3,0.1,0.5,0.2,0.7,0.2c0.6,0,1.4,0.1,2,0.1c0.2,0,0.3,0.1,0.5,0.1c1.3,0.6,2.8,1.6,3.9,2.3c0.1,0,0.1,0.1,0.2,0.1l0.5,0.1c0,0-1.7-1.7-2.3-2.3c-0.1-0.1-0.2-0.2-0.3-0.2c-2.5-1.4-4.7-2.6-6-3.1c-0.2-0.1-0.4-0.1-0.6-0.2c-3.9-0.3-7.9-0.2-10.9,0c-0.2,0-0.4,0.1-0.5,0.3c-0.1,0.2-0.3,0.5-0.5,0.8c-0.1,0.1-0.2,0.3-0.3,0.4c-0.5,0.5-1.4,1.2-2,1.7c0,0-0.1,0.1-0.1,0.1c-0.2,0.2-1,0.7-1.2,0.8c-0.1,0-0.1,0-0.1,0.1c0,0.1-0.3,0.4-0.3,0.4c2.4-1.3,5.4-3,6.4-3.5C66.6,13.5,66.7,13.4,66.9,13.4z"/><path fill="#FFFFFF" d="M55.8,21c0,0-0.1,0.1-0.1,0.1c-2.1,1.5-3.3,2.5-3.8,2.9c-0.2,0.2-0.4,0.4-0.5,0.5c-0.1,0.2-0.2,0.2-0.2,0.3c0,0.1,0,0.2,0,0.3c0,0,0,0.1,0,0.1c0,0,0.2,0.2,0.2,0.3c0,0,0,0,0.1,0c0.3-0.2,0.8-0.5,1.1-0.8c0,0,0.1-0.1,0.1-0.1c0.1-0.1,0.2-0.3,0.2-0.4c0-0.1,0.1-0.1,0.1-0.1c0.1-0.1,0.3-0.2,0.3-0.2s-0.2,0.7-0.3,1c0,0.1-0.1,0.1-0.1,0.2c-0.3,0.3-0.9,1-1.2,1.3c-0.1,0.1-0.1,0.3,0,0.4c0.3,0.4,0.8,1,1.1,1.4c0.1,0.1,0.1,0.2,0.2,0.2c0.1,0.1,0.2,0.1,0.2,0.1s0.3-1.3,0.4-1.7c0-0.1,0.1-0.2,0.3-0.3c1.4-0.3,4.4-0.8,4.4-0.8c-0.3-0.4-1.4-1.5-1.7-1.7c-0.1-0.1-0.2-0.1-0.3-0.1c-0.4,0-1.7-0.1-1.7-0.1s0.1-0.1,0.2-0.2c0.1-0.1,0.1-0.1,0.2-0.1c1.6-0.5,3.6-1.3,4.8-1.8c0.3-0.1,0.4-0.2,0.6-0.4c0.1-0.1,0.3-0.3,0.4-0.4c0,0,0,0,0-0.1c0,0,0-0.1,0-0.1s-0.5,0.4-0.7,0.5c-0.2,0.1-0.3,0.2-0.5,0.2c-0.4,0.1-1.2,0.3-1.7,0.4c-0.1,0-0.2,0-0.3,0c-0.1,0-0.2-0.1-0.3-0.1c-0.1,0-0.1-0.1-0.2,0c-0.4,0.1-1.6,0.4-1.6,0.4s0.5-0.5,0.6-0.5c0.1,0,0.1-0.1,0.2-0.1c0.4-0.2,0.9-0.3,1.3-0.5c0.1,0,0.1-0.1,0.1-0.2c0-0.3,0.1-0.9,0.2-1.2c0-0.1,0-0.1,0.1-0.2c0.2-0.2,1.1-0.9,1.4-1c0,0,0,0,0,0l0.2-0.3c-0.6,0.4-1.8,1-2.4,1.4c-0.3,0.2-0.4,0.2-0.6,0.4c0,0-0.1,0-0.1,0.1C56.7,19.8,56,20.7,55.8,21z"/></g><path fill="#FFFFFF" d="M96,2.2C87.1,0.7,78.3,0,69.9,0c-8.4,0-17.2,0.7-26,2.2c-0.1,3.6-0.3,9,0,13.7c0.6,10.4,2.9,18.5,7.2,25.4c4.3,6.9,11.1,12.8,18.9,16.4c7.8-3.5,14.5-9.5,18.9-16.4c4.4-6.9,6.6-15,7.2-25.4C96.2,11.3,96.1,5.8,96,2.2z M95,15.9c-0.6,10.2-2.8,18.1-7.1,24.9c-4.3,6.8-10.6,12.4-18,15.8c-7.4-3.4-13.8-9-18-15.8c-4.3-6.8-6.5-14.7-7.1-24.9c-0.2-3.3-0.2-7.5,0-12.8C53.2,1.7,61.6,1,69.9,1S86.7,1.7,95,3.1C95.2,8.4,95.2,12.6,95,15.9z"/><g><path fill="#FFFFFF" d="M68.9,8.5c-0.9,0-1.3-0.1-1.3-1c0-0.5,0-1.1,0-1.6c0-0.8,0.4-1.1,1.2-1.1c1.2,0,2.3,0,3.5,0c0,0.2,0,0.4,0,0.6c-1.2,0-2.5,0-3.7,0c-0.2,0-0.3,0.1-0.3,0.3c0,0.6,0,1.2,0,1.8c0,0.2,0.2,0.3,0.3,0.3c1.1,0,2.2,0,3.3,0c0-0.3,0-0.7,0-1c-0.6,0-1.3,0-1.9,0c0-0.2,0-0.4,0-0.6c0.9,0,1.7,0,2.6,0c0,0.7,0,1.4,0,2.2C71.3,8.5,70.1,8.5,68.9,8.5z"/><path fill="#FFFFFF" d="M52.2,5.8c-1.2,0.1-2.5,0.3-3.7,0.4c0,1.2,0,2.4,0,3.6c0.2,0,0.4-0.1,0.6-0.1c0-0.4,0-0.8,0-1.1c1-0.1,2-0.2,3.1-0.3c0.7-0.1,1.1-0.4,1.1-1.1c0-0.1,0-0.3,0-0.4C53.4,6,53,5.7,52.2,5.8z M52.8,7.4c0,0.2-0.2,0.3-0.3,0.3c-1.1,0.1-2.2,0.2-3.2,0.4c0-0.4,0-0.9,0-1.3c1.1-0.1,2.2-0.3,3.2-0.4c0.2,0,0.3,0.1,0.3,0.3C52.8,6.9,52.8,7.1,52.8,7.4z"/><path fill="#FFFFFF" d="M59.5,5.8c0-0.2,0-0.4,0-0.6c-1.5,0.1-3.1,0.2-4.6,0.3c0,1.2,0,2.4,0,3.6c1.5-0.1,3.1-0.3,4.6-0.3c0-0.2,0-0.4,0-0.6c-1.3,0.1-2.7,0.2-4,0.3c0-0.3,0-0.7,0-1c1.2-0.1,2.4-0.2,3.6-0.3c0-0.2,0-0.4,0-0.6c-1.2,0.1-2.4,0.2-3.6,0.3c0-0.3,0-0.6,0-0.9C56.8,6,58.1,5.9,59.5,5.8z"/><path fill="#FFFFFF" d="M78.7,5.7c0-0.2,0-0.4,0-0.6C77.1,5,75.6,4.9,74,4.9c0,1.2,0,2.4,0,3.6c1.5,0,3.1,0.1,4.6,0.2c0-0.2,0-0.4,0-0.6C77.3,8.1,76,8,74.6,8c0-0.3,0-0.7,0-1c1.2,0,2.4,0.1,3.6,0.1c0-0.2,0-0.4,0-0.6c-1.2-0.1-2.4-0.1-3.6-0.1c0-0.3,0-0.6,0-0.9C76,5.6,77.3,5.6,78.7,5.7z"/><path fill="#FFFFFF" d="M62.3,8.7c-0.8,0-1.3-0.1-1.3-0.9c0-0.9,0-1.8,0-2.6c0.2,0,0.4,0,0.6,0c0,0.9,0,1.8,0,2.7c0,0.2,0.1,0.3,0.3,0.3c1,0,2-0.1,3-0.1c0.2,0,0.3-0.2,0.3-0.3c0-0.9,0-1.8,0-2.7c0.2,0,0.4,0,0.6,0c0,0.9,0,1.8,0,2.6c0,0.8-0.4,1-1.3,1C63.9,8.6,63.1,8.6,62.3,8.7z"/><path fill="#FFFFFF" d="M81.2,5.8c-0.2,0-0.3,0.1-0.3,0.3c0,0.6,0,1.2,0,1.8c0,0.2,0.1,0.3,0.3,0.4c1,0.1,2.1,0.1,3.1,0.2c0.2,0,0.3-0.1,0.3-0.3c0-0.6,0-1.2,0-1.8c0-0.2-0.2-0.3-0.3-0.4C83.3,6,82.2,5.9,81.2,5.8z M81.5,8.9c-0.9-0.1-1.3-0.2-1.3-1.1c0-0.5,0-1.1,0-1.6c0-0.8,0.4-1,1.3-0.9c0.8,0.1,1.6,0.1,2.4,0.2c0.8,0.1,1.3,0.3,1.3,1.1c0,0.5,0,1.1,0,1.6c0,0.8-0.5,1-1.3,0.9C83.2,9,82.4,9,81.5,8.9z"/><path fill="#FFFFFF" d="M91.3,6.2c-1.6-0.2-3.2-0.4-4.9-0.5c0,0.2,0,0.4,0,0.6c0.7,0.1,1.4,0.1,2.1,0.2c0,1,0,2,0,3.1c0.2,0,0.4,0,0.6,0.1c0-1,0-2,0-3.1c0.7,0.1,1.4,0.2,2.1,0.3C91.3,6.6,91.3,6.4,91.3,6.2z"/></g></g></g></g></symbol><symbol id="youtube" viewBox="0 0 24 24">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<path class="st0" d="M12,0C5.4,0,0,5.4,0,12s5.4,12,12,12s12-5.4,12-12S18.6,0,12,0z M16.4,16.9c-2.1,0.1-6.8,0.1-8.9,0
+	C5.3,16.7,5,15.6,5,12c0-3.6,0.3-4.7,2.6-4.9c2.1-0.1,6.8-0.1,8.9,0C18.7,7.3,19,8.4,19,12C19,15.6,18.7,16.7,16.4,16.9z M10,9.7
+	l4.9,2.3L10,14.3V9.7z"/>
+</symbol></svg>
+    </div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__wrapper"><a class="header__logo"><img src="img/svg/logo.svg" width="157" height="132" alt="Логотип"></a>
+          <div class="main-nav-wrap">
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link" href="#">Item1</a>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">Item2</a>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">Item3</a>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">Item4</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__social"><a class="header__phone" href="tel:+777777777">+7 777 777-77-77</a>
+              <div class="header__social-block">
+                <p>Woodies</p>
+                <ul class="header__social-list">
+                  <li class="header__social-item"><a class="header__social-link header__social-link--facebook" href="#">
+                      <svg width="20" height="20" aria-hidden="true">
+                        <use xlink:href="#facebook"></use>
+                      </svg></a></li>
+                  <li class="header__social-item"><a class="header__social-link header__social-link--instagram" href="#">
+                      <svg width="20" height="20" aria-hidden="true">
+                        <use xlink:href="#instagram"></use>
+                      </svg></a></li>
+                  <li class="header__social-item"><a class="header__social-link header__social-link--youtube" href="#">
+                      <svg width="20" height="20" aria-hidden="true">
+                        <use xlink:href="#youtube"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <button class="burger" type="button" aria-label="Открыть меню"></button>
+        </div>
+      </header>
+      <main>
+        <h1 class="visually-hidden">Интернет-магазин часов</h1>
+        <div class="main-slider-wrap">
+          <div class="main-slider swiper-container-main">
+            <ul class="main-slider__list swiper-wrapper">
+              <li class="main-slider__item swiper-slide">
+                <picture>
+                  <source type="image/webp" srcset="img/slides/slide-1.webp, img/slides/slide-1@2x.webp 2x"><img src="img/slides/slide-1.jpg" width="1920" height="965" srcset="img/slides/slide-1@2x.jpg 2x" alt="Мужчина на фоне мотоцикла">
+                </picture>
+                <div class="main-slider__text">
+                  <h1 class="h1">Title</h1>
+                  <p class="main-slider__descr">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                  <button class="button" type="button">Заказать</button>
+                </div>
+              </li>
+              <li class="main-slider__item swiper-slide">
+                <picture>
+                  <source type="image/webp" srcset="img/slides/slide-1.webp, img/slides/slide-1@2x.webp 2x"><img src="img/slides/slide-1.jpg" width="1920" height="965" srcset="img/slides/slide-1@2x.jpg 2x" alt="Мужчина на фоне мотоцикла">
+                </picture>
+                <div class="main-slider__text">
+                  <h1 class="h1">Title</h1>
+                  <p class="main-slider__descr">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                  <button class="button" type="button">Заказать</button>
+                </div>
+              </li>
+              <li class="main-slider__item swiper-slide">
+                <picture>
+                  <source type="image/webp" srcset="img/slides/slide-1.webp, img/slides/slide-1@2x.webp 2x"><img src="img/slides/slide-1.jpg" width="1920" height="965" srcset="img/slides/slide-1@2x.jpg 2x" alt="Мужчина на фоне мотоцикла">
+                </picture>
+                <div class="main-slider__text">
+                  <h1 class="h1">Title</h1>
+                  <p class="main-slider__descr">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                  <button class="button" type="button">Заказать</button>
+                </div>
+              </li>
+              <li class="main-slider__item swiper-slide">
+                <picture>
+                  <source type="image/webp" srcset="img/slides/slide-1.webp, img/slides/slide-1@2x.webp 2x"><img src="img/slides/slide-1.jpg" width="1920" height="965" srcset="img/slides/slide-1@2x.jpg 2x" alt="Мужчина на фоне мотоцикла">
+                </picture>
+                <div class="main-slider__text">
+                  <h1 class="h1">Title</h1>
+                  <p class="main-slider__descr">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                  <button class="button" type="button">Заказать</button>
+                </div>
+              </li>
+            </ul>
+            <div class="main-slider__nav">
+              <button class="main-slider__btn main-slider__btn--prev"><svg width="63" height="62" viewBox="0 0 63 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.4" cx="31.5" cy="31" r="31" fill="black"/>
+<path d="M35.5 18L23.168 30.8064C22.795 31.1936 22.795 31.8064 23.168 32.1936L35.5 45" stroke="white" stroke-width="3" stroke-linecap="round"/>
+</svg>
+              </button>
+              <button class="main-slider__btn main-slider__btn--next"><svg width="63" height="62" viewBox="0 0 63 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.4" cx="31.5" cy="31" r="31" transform="rotate(-180 31.5 31)" fill="black"/>
+<path d="M27.5 44L39.832 31.1936C40.205 30.8064 40.205 30.1936 39.832 29.8064L27.5 17" stroke="white" stroke-width="3" stroke-linecap="round"/>
+</svg>
+              </button>
+            </div>
+            <div class="swiper-pagination-main"></div>
+          </div>
+        </div>
+        <div class="promotion-timer">
+          <div class="h2 promotion-timer__title">До конца акции осталось:</div>
+          <div class="timer">
+            <div class="timer__block"><span id="days">12</span>дней</div>
+            <div class="timer__block"><span id="hours">8</span>часов</div>
+            <div class="timer__block"><span id="minutes">15</span>минут</div>
+            <div class="timer__block"><span id="seconds">20</span>секунд</div>
+          </div>
+        </div>
+        <section class="features">
+          <div class="container">
+            <div class="features-list">
+              <div class="feature-card">
+                <div class="feature-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/features-1.webp 1x, img/content/features-1@2x.webp 2x"><img src="img/content/features-1.jpeg" srcset="img/content/features-1@2x.jpeg 2x" width="674" height="504" alt="some description">
+                  </picture>
+                </div>
+                <div class="feature-card__text">
+                  <h2 class="h2">Product Feature title</h2>
+                  <p class="feature-card__descr">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
+                  <button class="button">Узнать больше</button>
+                </div>
+              </div>
+              <div class="feature-card">
+                <div class="feature-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/features-1.webp 1x, img/content/features-1@2x.webp 2x"><img src="img/content/features-1.jpeg" srcset="img/content/features-1@2x.jpeg 2x" width="674" height="504" alt="some description">
+                  </picture>
+                </div>
+                <div class="feature-card__text">
+                  <h2 class="h2">Product Feature title</h2>
+                  <p class="feature-card__descr">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
+                  <button class="button">Узнать больше</button>
+                </div>
+              </div>
+              <div class="feature-card">
+                <div class="feature-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/features-1.webp 1x, img/content/features-1@2x.webp 2x"><img src="img/content/features-1.jpeg" srcset="img/content/features-1@2x.jpeg 2x" width="674" height="504" alt="some description">
+                  </picture>
+                </div>
+                <div class="feature-card__text">
+                  <h2 class="h2">Product Feature title</h2>
+                  <p class="feature-card__descr">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
+                  <button class="button">Узнать больше</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="product-tabs">
+          <div class="container">
+            <div class="product-tabs__header">
+              <div class="tab-h tab-h--active" data-tab="0">Tab1</div>
+              <div class="tab-h" data-tab="1">Tab2</div>
+              <div class="tab-h" data-tab="2">Tab3</div>
+            </div>
+            <div class="product-tabs__body">
+              <div class="tab-b">
+                <div class="product-container">
+                  <ul class="product-wrapper swiper-wrapper">
+                    <li class="product-slide swiper-slide">
+                      <picture>
+                        <source type="image/webp" srcset="img/slides/slide-2.webp 1x, img/slides/slide-2@2x.webp 2x"><img src="img/slides/slide-2.jpg" srcset="img/slides/slide-2@2x.jpg 2x" width="685" height="500" alt="some description">
+                      </picture>
+                      <p>Small description of the image</p>
+                    </li>
+                    <li class="product-slide swiper-slide">
+                      <picture>
+                        <source type="image/webp" srcset="img/slides/slide-3.webp 1x, img/slides/slide-3@2x.webp 2x"><img src="img/slides/slide-3.jpg" srcset="img/slides/slide-3@2x.jpg 2x" width="685" height="500" alt="some description">
+                      </picture>
+                      <p>Small description of the image</p>
+                    </li>
+                    <li class="product-slide swiper-slide">
+                      <picture>
+                        <source type="image/webp" srcset="img/slides/slide-2.webp 1x, img/slides/slide-2@2x.webp 2x"><img src="img/slides/slide-2.jpg" srcset="img/slides/slide-2@2x.jpg 2x" width="685" height="500" alt="some description">
+                      </picture>
+                      <p>Small description of the image</p>
+                    </li>
+                    <li class="product-slide swiper-slide">
+                      <picture>
+                        <source type="image/webp" srcset="img/slides/slide-3.webp 1x, img/slides/slide-3@2x.webp 2x"><img src="img/slides/slide-3.jpg" srcset="img/slides/slide-3@2x.jpg 2x" width="685" height="500" alt="some description">
+                      </picture>
+                      <p>Small description of the image</p>
+                    </li>
+                  </ul>
+                  <div class="product-tabs__nav">
+                    <button class="product-tabs__btn product-tabs__btn--prev"><svg width="63" height="62" viewBox="0 0 63 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.4" cx="31.5" cy="31" r="31" fill="black"/>
+<path d="M35.5 18L23.168 30.8064C22.795 31.1936 22.795 31.8064 23.168 32.1936L35.5 45" stroke="white" stroke-width="3" stroke-linecap="round"/>
+</svg>
+                    </button>
+                    <button class="product-tabs__btn product-tabs__btn--next"><svg width="63" height="62" viewBox="0 0 63 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.4" cx="31.5" cy="31" r="31" transform="rotate(-180 31.5 31)" fill="black"/>
+<path d="M27.5 44L39.832 31.1936C40.205 30.8064 40.205 30.1936 39.832 29.8064L27.5 17" stroke="white" stroke-width="3" stroke-linecap="round"/>
+</svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-b">
+                <div class="product-container">
+                  <ul class="product-wrapper swiper-wrapper">
+                    <li class="product-slide swiper-slide">
+                      <picture>
+                        <source type="image/webp" srcset="img/slides/slide-4.webp 1x, img/slides/slide-4@2x.webp 2x"><img src="img/slides/slide-4.jpg" srcset="img/slides/slide-4@2x.jpg 2x" width="685" height="500" alt="some description">
+                      </picture>
+                      <p>Small description of the image</p>
+                    </li>
+                    <li class="product-slide swiper-slide">
+                      <picture>
+                        <source type="image/webp" srcset="img/slides/slide-4.webp 1x, img/slides/slide-4@2x.webp 2x"><img src="img/slides/slide-4.jpg" srcset="img/slides/slide-4@2x.jpg 2x" width="685" height="500" alt="some description">
+                      </picture>
+                      <p>Small description of the image</p>
+                    </li>
+                    <li class="product-slide swiper-slide">
+                      <picture>
+                        <source type="image/webp" srcset="img/slides/slide-4.webp 1x, img/slides/slide-4@2x.webp 2x"><img src="img/slides/slide-4.jpg" srcset="img/slides/slide-4@2x.jpg 2x" width="685" height="500" alt="some description">
+                      </picture>
+                      <p>Small description of the image</p>
+                    </li>
+                    <li class="product-slide swiper-slide">
+                      <picture>
+                        <source type="image/webp" srcset="img/slides/slide-4.webp 1x, img/slides/slide-4@2x.webp 2x"><img src="img/slides/slide-4.jpg" srcset="img/slides/slide-4@2x.jpg 2x" width="685" height="500" alt="some description">
+                      </picture>
+                      <p>Small description of the image</p>
+                    </li>
+                  </ul>
+                  <div class="product-tabs__nav">
+                    <button class="product-tabs__btn product-tabs__btn--prev"><svg width="63" height="62" viewBox="0 0 63 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.4" cx="31.5" cy="31" r="31" fill="black"/>
+<path d="M35.5 18L23.168 30.8064C22.795 31.1936 22.795 31.8064 23.168 32.1936L35.5 45" stroke="white" stroke-width="3" stroke-linecap="round"/>
+</svg>
+                    </button>
+                    <button class="product-tabs__btn product-tabs__btn--next"><svg width="63" height="62" viewBox="0 0 63 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.4" cx="31.5" cy="31" r="31" transform="rotate(-180 31.5 31)" fill="black"/>
+<path d="M27.5 44L39.832 31.1936C40.205 30.8064 40.205 30.1936 39.832 29.8064L27.5 17" stroke="white" stroke-width="3" stroke-linecap="round"/>
+</svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-b">
+                <div class="product-container">
+                  <ul class="product-wrapper swiper-wrapper">
+                    <li class="product-slide swiper-slide">
+                      <picture>
+                        <source type="image/webp" srcset="img/slides/slide-3.webp 1x, img/slides/slide-3@2x.webp 2x"><img src="img/slides/slide-3.jpg" srcset="img/slides/slide-3@2x.jpg 2x" width="685" height="500" alt="some description">
+                      </picture>
+                      <p>Small description of the image</p>
+                    </li>
+                    <li class="product-slide swiper-slide">
+                      <picture>
+                        <source type="image/webp" srcset="img/slides/slide-3.webp 1x, img/slides/slide-3@2x.webp 2x"><img src="img/slides/slide-3.jpg" srcset="img/slides/slide-3@2x.jpg 2x" width="685" height="500" alt="some description">
+                      </picture>
+                      <p>Small description of the image</p>
+                    </li>
+                    <li class="product-slide swiper-slide">
+                      <picture>
+                        <source type="image/webp" srcset="img/slides/slide-3.webp 1x, img/slides/slide-3@2x.webp 2x"><img src="img/slides/slide-3.jpg" srcset="img/slides/slide-3@2x.jpg 2x" width="685" height="500" alt="some description">
+                      </picture>
+                      <p>Small description of the image</p>
+                    </li>
+                    <li class="product-slide swiper-slide">
+                      <picture>
+                        <source type="image/webp" srcset="img/slides/slide-3.webp 1x, img/slides/slide-3@2x.webp 2x"><img src="img/slides/slide-3.jpg" srcset="img/slides/slide-3@2x.jpg 2x" width="685" height="500" alt="some description">
+                      </picture>
+                      <p>Small description of the image</p>
+                    </li>
+                  </ul>
+                  <div class="product-tabs__nav">
+                    <button class="product-tabs__btn product-tabs__btn--prev"><svg width="63" height="62" viewBox="0 0 63 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.4" cx="31.5" cy="31" r="31" fill="black"/>
+<path d="M35.5 18L23.168 30.8064C22.795 31.1936 22.795 31.8064 23.168 32.1936L35.5 45" stroke="white" stroke-width="3" stroke-linecap="round"/>
+</svg>
+                    </button>
+                    <button class="product-tabs__btn product-tabs__btn--next"><svg width="63" height="62" viewBox="0 0 63 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.4" cx="31.5" cy="31" r="31" transform="rotate(-180 31.5 31)" fill="black"/>
+<path d="M27.5 44L39.832 31.1936C40.205 30.8064 40.205 30.1936 39.832 29.8064L27.5 17" stroke="white" stroke-width="3" stroke-linecap="round"/>
+</svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="calc">
+          <div class="container">
+            <div class="colors" id="calc">
+              <h2 class="h2">Calculate the cost</h2>
+              <ul class="colors__list">
+                <li class="colors__item calc__item" data-price="200000">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/item-1.webp 1x, img/content/item-1@2x.webp 2x"><img src="img/content/item-1.jpg" srcset="img/content/item-1@2x.jpg 2x" width="252" height="192" alt="some description">
+                  </picture>
+                </li>
+                <li class="colors__item calc__item" data-price="210000">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/item-1.webp 1x, img/content/item-1@2x.webp 2x"><img src="img/content/item-1.jpg" srcset="img/content/item-1@2x.jpg 2x" width="252" height="192" alt="some description">
+                  </picture>
+                </li>
+                <li class="colors__item calc__item" data-price="220000">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/item-1.webp 1x, img/content/item-1@2x.webp 2x"><img src="img/content/item-1.jpg" srcset="img/content/item-1@2x.jpg 2x" width="252" height="192" alt="some description">
+                  </picture>
+                </li>
+                <li class="colors__item calc__item" data-price="230000">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/item-1.webp 1x, img/content/item-1@2x.webp 2x"><img src="img/content/item-1.jpg" srcset="img/content/item-1@2x.jpg 2x" width="252" height="192" alt="some description">
+                  </picture>
+                </li>
+              </ul>
+            </div>
+            <div class="engine">
+              <h2 class="h2">Subtitle2</h2>
+              <ul class="engine__list">
+                <li class="engine__item calc__item" data-price="25000">
+                  <p class="calc__subtitle">Engine 25</p>
+                  <p class="calc__text">Description</p>
+                </li>
+                <li class="engine__item calc__item" data-price="30000">
+                  <p class="calc__subtitle">Engine 30</p>
+                  <p class="calc__text">Description</p>
+                </li>
+                <li class="engine__item calc__item" data-price="50000">
+                  <p class="calc__subtitle">Engine 50</p>
+                  <p class="calc__text">Description</p>
+                </li>
+              </ul>
+            </div>
+            <div class="mod">
+              <h2 class="h2">Subtitle3</h2>
+              <ul class="mod__list">
+                <li class="mod__item calc__item" data-price="60000">
+                  <p class="calc__subtitle">Variant 1</p>
+                  <p class="calc__text">Description</p>
+                </li>
+                <li class="mod__item calc__item" data-price="70000">
+                  <p class="calc__subtitle">Variant 2</p>
+                  <p class="calc__text">Description</p>
+                </li>
+              </ul>
+            </div>
+            <div class="price calc__subtitle">
+              <p class="price__text">Price:</p><span class="price__sum">247 000p</span>
+            </div><a class="button button--large" href="#">To the Store</a>
+          </div>
+        </section>
+        <section class="products">
+          <div class="container">
+            <h2 class="h2">Maybe you’ll like</h2>
+            <ul class="products__list">
+              <li class="products__item">
+                <div class="products__img-wrap">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/product-1.webp 1x, img/content/product-1@2x.webp 2x"><img src="img/content/product-1.png" srcset="img/content/product-1@2x.png 2x" width="363" height="219" alt="product-1">
+                  </picture>
+                </div>
+                <div class="products__text">
+                  <h3 class="products__subtitle">product-1</h3>
+                  <table class="products__info">
+                    <tr class="products__row">
+                      <td>Feature-1</td>
+                      <td>172</td>
+                    </tr>
+                    <tr class="products__row">
+                      <td>Feature-2</td>
+                      <td>45</td>
+                    </tr>
+                    <tr class="products__row">
+                      <td>Feature-3</td>
+                      <td>Feature type</td>
+                    </tr>
+                  </table><a class="button" href="#">Learn more</a>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__img-wrap">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/product-1.webp 1x, img/content/product-1@2x.webp 2x"><img src="img/content/product-1.png" srcset="img/content/product-1@2x.png 2x" width="363" height="219" alt="product-1">
+                  </picture>
+                </div>
+                <div class="products__text">
+                  <h3 class="products__subtitle">product-1</h3>
+                  <table class="products__info">
+                    <tr class="products__row">
+                      <td>Feature-1</td>
+                      <td>190</td>
+                    </tr>
+                    <tr class="products__row">
+                      <td>Feature-2</td>
+                      <td>40</td>
+                    </tr>
+                    <tr class="products__row">
+                      <td>Feature-3</td>
+                      <td>Feature type</td>
+                    </tr>
+                  </table><a class="button" href="#">Learn more</a>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__img-wrap">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/product-1.webp 1x, img/content/product-1@2x.webp 2x"><img src="img/content/product-1.png" srcset="img/content/product-1@2x.png 2x" width="363" height="219" alt="product-1">
+                  </picture>
+                </div>
+                <div class="products__text">
+                  <h3 class="products__subtitle">product-1</h3>
+                  <table class="products__info">
+                    <tr class="products__row">
+                      <td>Feature-1</td>
+                      <td>180</td>
+                    </tr>
+                    <tr class="products__row">
+                      <td>Feature-2</td>
+                      <td>50</td>
+                    </tr>
+                    <tr class="products__row">
+                      <td>Feature-3</td>
+                      <td>Feature type</td>
+                    </tr>
+                  </table><a class="button" href="#">Learn more</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section><a href="#calc">
+          <button class="flow-btn"><svg width="30" height="32" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M27.0732 0H16.0976C16.061 0 15.9878 0 15.9512 0C15.9146 0 15.878 -3.40598e-08 15.878 0.0361678H15.8415C15.8049 0.0361678 15.7683 0.0723355 15.7317 0.0723355H15.6951C15.6585 0.108503 15.622 0.144671 15.5854 0.144671L9 6.65488C8.96341 6.69104 8.92683 6.72721 8.92683 6.76338C8.92683 6.76338 8.92683 6.76338 8.89024 6.79955C8.89024 6.83571 8.85366 6.87188 8.85366 6.90805V6.94422C8.85366 6.98039 8.81707 7.01655 8.81707 7.01655C8.81707 7.05272 8.81707 7.12506 8.81707 7.16123V11.0227H2.92683C1.31707 11.0227 0 12.3247 0 13.9161V29.1066C0 30.698 1.31707 32 2.92683 32H13.1707C14.7805 32 16.0976 31.1766 16.0976 29.5853V28.8619H27.0732C28.6829 28.8619 30 27.5599 30 25.9685V2.89342C30 1.30204 28.6829 0 27.0732 0ZM15.3659 2.45941V5.06349C15.3659 5.85918 14.7073 6.51021 13.9024 6.51021H11.2683L15.3659 2.45941ZM14.6341 29.1789C14.6341 29.9746 13.9756 30.6256 13.1707 30.6256H2.92683C2.12195 30.6256 1.46341 29.9746 1.46341 29.1789V17.6052H14.6341V29.1789ZM14.6341 16.1585H1.46341V13.9884C1.46341 13.1927 2.12195 12.5417 2.92683 12.5417H13.1707C13.9756 12.5417 14.6341 13.1927 14.6341 13.9884V16.1585ZM28.5366 26.0408C28.5366 26.8365 27.878 27.4875 27.0732 27.4875H16.0976V14.4671C16.0976 12.8757 14.7805 11.095 13.1707 11.095H10.2439V7.95692H13.9024C15.5122 7.95692 16.8293 6.65488 16.8293 5.06349V1.44671H27.0732C27.878 1.44671 28.5366 2.09773 28.5366 2.89342V26.0408ZM26.3415 23.1474C26.3415 23.5452 26.0122 23.8708 25.6098 23.8708H19.0244C18.622 23.8708 18.2927 23.5452 18.2927 23.1474C18.2927 22.7495 18.622 22.424 19.0244 22.424H25.6098C26.0122 22.424 26.3415 22.7495 26.3415 23.1474ZM26.3415 19.5306C26.3415 19.9285 26.0122 20.254 25.6098 20.254H19.0244C18.622 20.254 18.2927 19.9285 18.2927 19.5306C18.2927 19.1328 18.622 18.8073 19.0244 18.8073H25.6098C26.0122 18.8073 26.3415 19.1328 26.3415 19.5306ZM3.65854 20.6433C3.65854 20.6071 3.65854 20.5348 3.65854 20.4986C3.65854 20.4625 3.65854 20.3901 3.65854 20.354C3.65854 20.3178 3.69512 20.2816 3.69512 20.2093C3.69512 20.1731 3.73171 20.137 3.76829 20.1008C3.80488 20.0646 3.80488 20.0285 3.84146 19.9923C4.02439 19.8114 4.28049 19.7391 4.5 19.8114C4.53658 19.8114 4.57317 19.8476 4.64634 19.8476C4.68293 19.8838 4.71951 19.8838 4.7561 19.92C4.79268 19.9561 4.82927 19.9923 4.86585 19.9923C4.90244 20.0285 4.93902 20.0646 4.93902 20.1008C4.97561 20.137 4.97561 20.1731 5.0122 20.2093C5.04878 20.2455 5.04878 20.2816 5.04878 20.354C5.04878 20.3901 5.04878 20.4625 5.04878 20.4986C5.04878 20.5348 5.04878 20.6071 5.04878 20.6433C5.04878 20.6795 5.0122 20.7518 5.0122 20.788C5.0122 20.8241 4.97561 20.8603 4.93902 20.8965C4.90244 20.9326 4.86585 20.9688 4.82927 21.005C4.7561 21.1497 4.57317 21.222 4.39024 21.222C4.20732 21.222 4.02439 21.1497 3.87805 21.005C3.84146 20.9688 3.80488 20.9326 3.80488 20.8965C3.76829 20.8603 3.76829 20.8241 3.73171 20.788C3.69512 20.7156 3.69512 20.6795 3.65854 20.6433ZM3.65854 24.2601C3.65854 24.2239 3.65854 24.1516 3.65854 24.1154C3.65854 24.0792 3.65854 24.0069 3.65854 23.9707C3.65854 23.9346 3.69512 23.8622 3.69512 23.8261C3.69512 23.7899 3.73171 23.7537 3.76829 23.7176C3.80488 23.6814 3.80488 23.6452 3.84146 23.6091C4.13415 23.3197 4.60976 23.3197 4.86585 23.6091C4.90244 23.6452 4.93902 23.6814 4.93902 23.7176C4.97561 23.7537 4.97561 23.7899 5.0122 23.8261C5.04878 23.8622 5.04878 23.8984 5.04878 23.9707C5.04878 24.0069 5.04878 24.0792 5.04878 24.1154C5.04878 24.1516 5.04878 24.2239 5.04878 24.2601C5.04878 24.2963 5.0122 24.3686 5.0122 24.4048C5.0122 24.4409 4.97561 24.4771 4.93902 24.5133C4.90244 24.5494 4.86585 24.5856 4.86585 24.6218C4.79268 24.6941 4.71951 24.7303 4.64634 24.7664C4.57317 24.8388 4.5 24.8388 4.39024 24.8388C4.28049 24.8388 4.20732 24.8388 4.09756 24.7664C4.02439 24.7303 3.91463 24.6941 3.87805 24.6218C3.84146 24.5856 3.80488 24.5494 3.80488 24.5133C3.76829 24.4771 3.76829 24.4409 3.73171 24.4048C3.69512 24.3324 3.69512 24.2963 3.65854 24.2601ZM3.73171 28.0215C3.65854 27.913 3.65854 27.8407 3.65854 27.7322C3.65854 27.696 3.65854 27.6237 3.65854 27.5875C3.65854 27.5514 3.69512 27.479 3.69512 27.4429C3.69512 27.4067 3.73171 27.3705 3.76829 27.3344C3.80488 27.2982 3.80488 27.262 3.84146 27.2258C4.09756 26.9365 4.60976 26.9365 4.86585 27.2258C4.90244 27.262 4.93902 27.2982 4.93902 27.3344C4.97561 27.3705 4.97561 27.4067 5.0122 27.4429C5.04878 27.479 5.04878 27.5152 5.04878 27.5875C5.04878 27.6237 5.04878 27.696 5.04878 27.7322C5.04878 27.8407 5.04878 27.913 4.97561 28.0215C4.93902 28.0939 4.90244 28.2024 4.82927 28.2385C4.7561 28.3832 4.57317 28.4556 4.39024 28.4556C4.20732 28.4556 4.02439 28.3832 3.87805 28.2385C3.80488 28.1662 3.73171 28.0939 3.73171 28.0215ZM7.31707 20.6433C7.31707 20.6071 7.31707 20.5348 7.31707 20.4986C7.31707 20.4625 7.31707 20.3901 7.31707 20.354C7.31707 20.3178 7.35366 20.2816 7.35366 20.2093C7.35366 20.1731 7.39024 20.137 7.42683 20.1008C7.46341 20.0646 7.46341 20.0285 7.5 19.9923C7.7561 19.7029 8.26829 19.7029 8.52439 19.9923C8.56098 20.0285 8.59756 20.0646 8.59756 20.1008C8.63415 20.137 8.63415 20.1731 8.67073 20.2093C8.70732 20.2455 8.70732 20.2816 8.70732 20.354C8.70732 20.3901 8.70732 20.4625 8.70732 20.4986C8.70732 20.5348 8.70732 20.6071 8.70732 20.6433C8.70732 20.6795 8.67073 20.7518 8.67073 20.788C8.67073 20.8241 8.63415 20.8603 8.59756 20.8965C8.56098 20.9326 8.52439 20.9688 8.48781 21.005C8.41463 21.0773 8.34146 21.1135 8.26829 21.1497C8.23171 21.222 8.15854 21.222 8.04878 21.222C7.86585 21.222 7.68293 21.1497 7.53659 21.005C7.5 20.9688 7.46341 20.9326 7.46341 20.8965C7.42683 20.8603 7.42683 20.8241 7.39024 20.788C7.35366 20.7156 7.35366 20.6795 7.31707 20.6433ZM7.31707 24.2601C7.31707 24.2239 7.31707 24.1516 7.31707 24.1154C7.31707 24.0792 7.31707 24.0069 7.31707 23.9707C7.31707 23.9346 7.35366 23.8622 7.35366 23.8261C7.35366 23.7899 7.39024 23.7537 7.42683 23.7176C7.46341 23.6814 7.46341 23.6452 7.5 23.6091C7.53659 23.5729 7.57317 23.5367 7.60976 23.5367C7.64634 23.5367 7.68293 23.5006 7.71951 23.4644C7.7561 23.4644 7.79268 23.4282 7.86585 23.4282C8.12195 23.3921 8.34146 23.4644 8.52439 23.6091C8.56098 23.6452 8.59756 23.6814 8.59756 23.7176C8.63415 23.7537 8.63415 23.7899 8.67073 23.8261C8.70732 23.8622 8.70732 23.8984 8.70732 23.9707C8.70732 24.0069 8.70732 24.0792 8.70732 24.1154C8.70732 24.2963 8.63415 24.4771 8.48781 24.6218C8.41463 24.7664 8.23171 24.8388 8.04878 24.8388C7.86585 24.8388 7.68293 24.7664 7.53659 24.6218C7.5 24.5856 7.46341 24.5494 7.42683 24.5133C7.39024 24.4771 7.39024 24.4409 7.35366 24.4048C7.35366 24.3324 7.35366 24.2963 7.31707 24.2601ZM7.39024 28.0215C7.31707 27.913 7.31707 27.8407 7.31707 27.7322C7.31707 27.696 7.31707 27.6237 7.31707 27.5875C7.31707 27.5514 7.35366 27.479 7.35366 27.4429C7.35366 27.4067 7.39024 27.3705 7.42683 27.3344C7.46341 27.2982 7.46341 27.262 7.5 27.2258C7.68293 27.045 7.90244 26.9727 8.15854 27.045C8.19512 27.045 8.23171 27.0812 8.30488 27.0812C8.34146 27.1173 8.37805 27.1173 8.41463 27.1535C8.45122 27.1897 8.4878 27.2258 8.52439 27.2258C8.56098 27.262 8.59756 27.2982 8.59756 27.3344C8.63415 27.3705 8.63415 27.4067 8.67073 27.4429C8.70732 27.479 8.70732 27.5152 8.70732 27.5875C8.70732 27.6237 8.70732 27.696 8.70732 27.7322C8.70732 27.8407 8.70732 27.913 8.63415 28.0215C8.59756 28.0939 8.56098 28.2024 8.48781 28.2385C8.45122 28.2747 8.41463 28.3109 8.37805 28.347C8.34146 28.3832 8.30488 28.3832 8.26829 28.4194C8.23171 28.4556 8.19512 28.4556 8.12195 28.4556C8.08537 28.4556 8.01219 28.4556 7.97561 28.4556C7.79268 28.4556 7.60976 28.3832 7.46341 28.2385C7.46341 28.1662 7.39024 28.0939 7.39024 28.0215ZM10.9756 20.6433C10.9756 20.6071 10.9756 20.5348 10.9756 20.4986C10.9756 20.4625 10.9756 20.3901 10.9756 20.354C10.9756 20.3178 11.0122 20.2816 11.0122 20.2093C11.0122 20.1731 11.0488 20.137 11.0854 20.1008C11.122 20.0646 11.122 20.0285 11.1585 19.9923C11.4146 19.7029 11.9268 19.7029 12.1829 19.9923C12.2195 20.0285 12.2561 20.0646 12.2561 20.1008C12.2927 20.137 12.2927 20.1731 12.3293 20.2093C12.3659 20.2455 12.3659 20.2816 12.3659 20.354C12.3659 20.3901 12.3659 20.4625 12.3659 20.4986C12.3659 20.5348 12.3659 20.6071 12.3659 20.6433C12.3659 20.6795 12.3293 20.7518 12.3293 20.788C12.3293 20.8241 12.2927 20.8603 12.2561 20.8965C12.2195 20.9326 12.1829 20.9688 12.1829 21.005C12.0732 21.1497 11.8902 21.222 11.7073 21.222C11.5244 21.222 11.3415 21.1497 11.1951 21.005C11.1585 20.9688 11.122 20.9326 11.0854 20.8965C11.0488 20.8603 11.0488 20.8241 11.0122 20.788C11.0122 20.7156 11.0122 20.6795 10.9756 20.6433ZM10.9756 27.7322V24.1154C10.9756 23.7176 11.3049 23.3921 11.7073 23.3921C12.1098 23.3921 12.439 23.7176 12.439 24.1154V27.7322C12.439 28.13 12.1098 28.4556 11.7073 28.4556C11.3049 28.4556 10.9756 28.13 10.9756 27.7322Z" fill="white"/>
+<path d="M23.3612 6.21714C23.8831 6.21714 24.3655 6.35855 24.8086 6.64137C25.2517 6.91444 25.6012 7.2899 25.8572 7.76777C26.1231 8.24564 26.256 8.77227 26.256 9.34766C26.256 9.92305 26.1231 10.4546 25.8572 10.9422C25.6012 11.4298 25.2517 11.815 24.8086 12.0978C24.3655 12.3806 23.8831 12.5221 23.3612 12.5221H20.5846V13.4437H21.2935C21.5003 13.4437 21.6677 13.5022 21.7957 13.6192C21.9335 13.7362 22.0025 13.8874 22.0025 14.0727C22.0025 14.2677 21.9335 14.4238 21.7957 14.5408C21.6677 14.6578 21.5003 14.7163 21.2935 14.7163H20.5846V15.755C20.5846 15.95 20.5206 16.1158 20.3926 16.2523C20.2646 16.3889 20.1022 16.4571 19.9052 16.4571C19.6985 16.4571 19.5311 16.3938 19.4031 16.267C19.2849 16.1304 19.2258 15.9598 19.2258 15.755V14.7163H18.7975C18.5809 14.7163 18.4037 14.6578 18.2658 14.5408C18.1378 14.4238 18.0738 14.2677 18.0738 14.0727C18.0738 13.8874 18.1378 13.7362 18.2658 13.6192C18.4037 13.5022 18.5809 13.4437 18.7975 13.4437H19.2258V12.4782H18.8123C18.6055 12.4782 18.4332 12.4148 18.2954 12.288C18.1674 12.1612 18.1034 12.0003 18.1034 11.8053C18.1034 11.6102 18.1674 11.4542 18.2954 11.3371C18.4332 11.2104 18.6055 11.147 18.8123 11.147H19.2258V6.91931C19.2258 6.72427 19.2948 6.55848 19.4326 6.42194C19.5705 6.28541 19.7378 6.21714 19.9348 6.21714H23.3612ZM23.3612 11.1909C23.6271 11.1909 23.8732 11.108 24.0997 10.9422C24.3262 10.7666 24.5034 10.5374 24.6314 10.2546C24.7692 9.97181 24.8382 9.66949 24.8382 9.34766C24.8382 8.85029 24.6905 8.43093 24.3951 8.0896C24.1095 7.73851 23.7649 7.56297 23.3612 7.56297H20.5846V11.1909H23.3612Z" fill="white"/>
+</svg>
+            <p>calculate the cost</p>
+          </button></a>
+      </main>
+      <div class="subscription">
+        <div class="subscription__wrapper">
+          <h2>Subtitle</h2>
+          <form class="subscription__form">
+            <label for="subscription__name">name
+              <input id="subscription__name" type="text" pattern="^[A-Za-zА-Яа-яЁёs]{4,}" title="Разрешено использовать только пробелы и латинские буквы, не менее 4" name="subscription__name">
+            </label>
+            <label for="subscription__email">email
+              <input id="subscription__email" type="email" name="subscription__email">
+            </label>
+            <button type="submit">subscribe</button>
+          </form>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__models">
+            <h2>Models</h2>
+            <ul class="footer__list footer__list1">
+              <li class="footer__item"><a class="footer__link" href="#">product-1</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">product-2</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">product-3</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">product-4</a></li>
+            </ul>
+          </div>
+          <div class="footer__buyers">
+            <h2>for buyers</h2>
+            <ul class="footer__list">
+              <li class="footer__item"><a class="footer__link" href="#">FAQ</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Flagship store</a></li>
+            </ul>
+          </div>
+          <div class="footer__join">
+            <div class="footer__social"><a class="footer__icon" href="#">
+                <svg width="30" height="30" aria-hidden="true">
+                  <use xlink:href="#facebook"></use>
+                </svg></a><a class="footer__icon" href="#">
+                <svg width="30" height="30" aria-hidden="true">
+                  <use xlink:href="#instagram"></use>
+                </svg></a><a class="footer__icon" href="#">
+                <svg width="30" height="30" aria-hidden="true">
+                  <use xlink:href="#youtube"></use>
+                </svg></a></div>
+          </div>
+        </div>
+        <div class="footer__additional">
+          <div class="footer__logo"><a href="#"><img src="img/svg/logo.svg" width="157" height="132" alt="Логотип"></a></div>
+          <div class="footer__terms"><a href="terms.html">Terms and Conditions</a></div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

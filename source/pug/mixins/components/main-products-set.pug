@@ -1,0 +1,11 @@
+mixin main-products-set(info)
+  .main-products__items
+    each item in info
+      .main-products__item
+        .main-products__image
+          +img("content", item.img, "jpg", "338", "290", item.alt)
+          span.span=item.span
+        .main-products__text
+          h2.h2=item.title
+          p.p=item.descr
+          button.button(type=button) Learn MOre

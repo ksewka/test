@@ -1,0 +1,24 @@
+extends ../base/layout
+
+block variables
+  - const title = "Woodies - интернет-магазин часов" //- на страницах кроме главной используйте О нас — ProjectName
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const hasSubscription = true
+  - const currentPage = "main" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+
+block main
+  main
+    h1(class="visually-hidden") Интернет-магазин часов
+    include ../data/main-slider
+    include ../data/timer
+    include ../data/features
+    include ../data/product-tabs
+    include ../data/calculator
+    include ../data/products
+    +flow-btn()
+
+block modals

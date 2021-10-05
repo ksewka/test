@@ -1,0 +1,140 @@
+.header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 0 40px;
+  background-color: $color-default-white;
+
+  @include vp--1023 {
+    padding: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+
+    @include vp--767 {
+      flex-direction: column;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__logo {
+    margin-top: 5px;
+    margin-left: 23px;
+    margin-bottom: 7px;
+
+    @include vp--1023 {
+      margin-left: 5px;
+      margin-bottom: 9px;
+    }
+
+    @include vp--767 {
+      margin: 0 auto;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 66px;
+      left: 14px;
+      width: 25%;
+      height: 1px;
+      background-color: $color-white;
+      display: none;
+
+      @include vp--767 {
+        display: block;
+      }
+
+      @media (max-width: 400px) {
+        width: 20%;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 66px;
+      right: 20px;
+      width: 25%;
+      height: 1px;
+      background-color: $color-white;
+      display: none;
+
+      @include vp--767 {
+        display: block;
+      }
+
+      @media (max-width: 400px) {
+        width: 20%;
+      }
+    }
+  }
+
+  &__phone {
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: auto;
+    color: $color-black;
+    transition: $trans--300;
+
+    @include vp--1023 {
+      margin-right: 12px;
+    }
+
+    @include vp--767 {
+      margin: 0;
+      font-size: 15px;
+      line-height: 25px;
+      margin-bottom: 10px;
+      color: $color-white;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__social-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 74%;
+  }
+
+  &__social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-block {
+      display: none;
+
+      @include vp--767 {
+        display: block;
+        width: 198px;
+        margin-left: 10px;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 25px;
+        margin: 0;
+        color: $color-white;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+}

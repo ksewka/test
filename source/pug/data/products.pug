@@ -1,0 +1,45 @@
+-
+  var productCardInfo = [
+    {
+      model: "product-1",
+      engine: "172",
+      maxSpeed: "45",
+      feature: "Feature type"
+    },
+    {
+      model: "product-1",
+      engine: "190",
+      maxSpeed: "40",
+      feature: "Feature type"
+    },
+    {
+      model: "product-1",
+      engine: "180",
+      maxSpeed: "50",
+      feature: "Feature type"
+    }
+  ]
+
+section.products
+  .container
+    h2.h2 Maybe you’ll like
+    ul.products__list
+      each product in productCardInfo
+        li.products__item
+          .products__img-wrap
+            +img("content", product.model, "png", "363", "219", product.model)
+          .products__text
+            h3.products__subtitle=product.model
+            table.products__info
+              tr.products__row
+                td Feature-1
+                td=product.engine
+              tr.products__row
+                td Feature-2
+                td=product.maxSpeed
+              tr.products__row
+                td Feature-3
+                td=product.feature
+            a.button(href="#") Learn more
+
+

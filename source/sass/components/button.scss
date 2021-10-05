@@ -1,0 +1,32 @@
+.button {
+  display: block;
+  background-color: $summer-sky-color;
+  padding: 10px 26px;
+  font-family: $font-family--roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  border: none;
+  color: $color-white;
+  cursor: pointer;
+  transition: $trans--300;
+  border: 1px solid transparent;
+
+  &--large {
+    padding: 21px 99px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+
+    @media (max-width: 400px) {
+      padding: 21px 77px;
+    }
+  }
+
+  &:hover {
+    background-color: $color-black;
+    border: 1px solid $color-white;
+  }
+}

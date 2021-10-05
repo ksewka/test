@@ -1,0 +1,167 @@
+.main-products {
+  background-color: black;
+  color: white;
+  margin-top: -5px;
+}
+
+.main-products .container {
+  padding: 0;
+}
+
+.main-products__items {
+  display: flex;
+  margin: 0;
+
+  @include vp--1023 {
+    flex-wrap: wrap;
+  }
+}
+
+.main-products__item {
+  padding-bottom: 75px;
+  max-width: 338px;
+  width: 100%;
+
+  @include vp--1023 {
+    flex: 0 1 50%;
+    padding-bottom: 76px;
+    max-width: 100%;
+  }
+
+  @include vp--767 {
+    flex: 0 1 100%;
+    padding-bottom: 76px;
+  }
+}
+
+.main-products__item:nth-child(1) {
+  @include vp--767 {
+    order: 4;
+  }
+}
+
+.main-products__item:nth-child(2) {
+  @include vp--767 {
+    order: 2;
+  }
+}
+
+.main-products__item:nth-child(3) {
+
+  @include vp--767 {
+    order: 3;
+  }
+}
+
+.main-products__item:nth-child(4) {
+  @include vp--767 {
+    order: 1;
+  }
+}
+
+.main-products__image {
+  position: relative;
+  margin: 0;
+}
+
+.main-products__image img {
+  margin: 0;
+  width: 100%;
+  height: 296px;
+  object-fit: cover;
+
+  @include vp--767 {
+    height: 290px;
+  }
+}
+
+.main-products__image::after {
+  content: "";
+  background: linear-gradient(360deg, #000000 -3.62%, rgba(0, 0, 0, 0.545875) 28.88%, rgba(0, 0, 0, 0) 71.67%);
+  height: 120px;
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+}
+
+.main-products__image::before {
+  content: "";
+  background-color: black;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.main-products__image:hover::before {
+  opacity: 0;
+}
+
+.main-products__image span {
+  position: absolute;
+  bottom: -13px;
+  left: calc(50% - 151px/2 + 0.5px);
+  letter-spacing: 0.8em;
+  z-index: 10;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 35px;
+
+
+  @include vp--1023 {
+    bottom: -12px;
+  }
+
+  @include vp--767 {
+    bottom: -18px;
+  }
+}
+
+.main-products__text {
+  margin-top: 12px;
+
+  @include vp--1023 {
+   margin-top: 11px;
+  }
+
+  @include vp--767 {
+    margin-top: 18px;
+  }
+}
+
+.main-products__text h2 {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+
+  @include vp--1023 {
+   z-index: 100;
+  }
+}
+
+.main-products__text p {
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  max-width: 270px;
+  margin: 0 auto;
+  margin-top: 23px;
+  margin-bottom: 37px;
+  height: 88px;
+  overflow: hidden;
+
+  @include vp--1023 {
+    height: auto;
+    max-width: 280px;
+    margin-bottom: 60px;
+  }
+}
+
+.main-products__text button {
+  display: block;
+  background-color: $color-transparent;
+  border: 1px solid #F39449;
+  margin: 0 auto;
+}

@@ -1,0 +1,9 @@
+mixin main-feature-card(info)
+  each item in info
+    .main-feature__card
+      .main-feature__image
+        +img("content", item.img, "jpg", "678", "508", item.alt)
+      .main-feature__text
+        h2.h2=item.title
+        p=item.descr
+        button.button(type=button) Узнать больше

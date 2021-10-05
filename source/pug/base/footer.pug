@@ -1,0 +1,43 @@
+mixin footer(footerMods)
+  -
+    var footer__list1 = [
+      "product-1",
+      "product-2",
+      "product-3",
+      "product-4"
+    ]
+
+    var footer__list2 = [
+      "FAQ",
+      "Flagship store"
+    ]
+  footer.footer(class=footerMods)
+    .footer__wrapper
+      .footer__models
+        h2 Models
+        ul.footer__list.footer__list1
+          each item in footer__list1
+            li.footer__item
+              a.footer__link(href="#")= item
+      .footer__buyers
+        h2 for buyers
+        ul.footer__list
+          each item in footer__list2
+            li.footer__item
+              a.footer__link(href="#")= item
+      .footer__join
+        .footer__social
+          a.footer__icon(href="#")
+            +icon("facebook", "30", "30")
+          a.footer__icon(href="#")
+            +icon("instagram", "30", "30")
+          a.footer__icon(href="#")
+            +icon("youtube", "30", "30")
+    .footer__additional
+      .footer__logo
+        a(href="#")
+          img(src="img/svg/logo.svg", width="157", height="132", alt="Логотип")
+      .footer__terms
+        a(href="terms.html") Terms and Conditions
+
+

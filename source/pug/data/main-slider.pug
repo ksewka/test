@@ -1,0 +1,54 @@
+-
+  var slideInfo = [
+    {
+      img: "slide-1",
+      alt: "some description",
+      title: "Title",
+      descr: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+    },
+    {
+      img: "slide-1",
+      alt: "some description",
+      title: "Title",
+      descr: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+    },
+    {
+      img: "slide-1",
+      alt: "some description",
+      title: "Title",
+      descr: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+    },
+    {
+      img: "slide-1",
+      alt: "some description",
+      title: "Title",
+      descr: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+    },
+  ]
+
+.main-slider-wrap
+  .main-slider.swiper-container-main
+    ul.main-slider__list.swiper-wrapper
+      each item in slideInfo
+        li.main-slider__item.swiper-slide
+          picture
+            source(type="image/webp" srcset=`img/slides/${item.img}.webp, img/slides/${item.img}@2x.webp 2x`)
+            img(src=`img/slides/${item.img}.jpg` width="1920" height="965" srcset=`img/slides/${item.img}@2x.jpg 2x` alt="Мужчина на фоне мотоцикла")
+          .main-slider__text
+            h1.h1=item.title
+            p.main-slider__descr=item.descr
+            button.button(type="button") Заказать
+    .main-slider__nav
+      button.main-slider__btn.main-slider__btn--prev
+        <svg width="63" height="62" viewBox="0 0 63 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle opacity="0.4" cx="31.5" cy="31" r="31" fill="black"/>
+        <path d="M35.5 18L23.168 30.8064C22.795 31.1936 22.795 31.8064 23.168 32.1936L35.5 45" stroke="white" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      button.main-slider__btn.main-slider__btn--next
+        <svg width="63" height="62" viewBox="0 0 63 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle opacity="0.4" cx="31.5" cy="31" r="31" transform="rotate(-180 31.5 31)" fill="black"/>
+        <path d="M27.5 44L39.832 31.1936C40.205 30.8064 40.205 30.1936 39.832 29.8064L27.5 17" stroke="white" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+    .swiper-pagination-main
+
+

@@ -1,0 +1,10 @@
+mixin subscription(subscriptionMods, currentPage)
+  .subscription(class=subscriptionMods)
+    .subscription__wrapper
+      h2 Subtitle
+      form.subscription__form
+        label(for="subscription__name") name
+          input#subscription__name(type="text", pattern="^[A-Za-zА-Яа-яЁё\s]{4,}", title="Разрешено использовать только пробелы и латинские буквы, не менее 4", name="subscription__name")
+        label(for="subscription__email") email
+          input#subscription__email(type="email", name="subscription__email")
+        button(type="submit") subscribe
